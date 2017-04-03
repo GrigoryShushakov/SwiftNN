@@ -103,9 +103,6 @@ class Network {
          derivativeActivationFunction: @escaping (Double) -> Double = derivativeSigmoidFunction,
          learningRate: Double) {
 
-        if (layerStructure.count < 3) {
-            print("Error: Should be at least 3 layers (1 input, 1 hidden, 1 output)")
-        }
         layers = [Layer]()
 
         //Create input layer
